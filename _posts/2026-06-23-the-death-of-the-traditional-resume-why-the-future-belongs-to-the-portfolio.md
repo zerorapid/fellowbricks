@@ -2,9 +2,9 @@
 layout: post
 title: "The Death of the Traditional Resume: Why the Future Belongs to the Portfolio"
 date: 2026-06-23 12:00:00 +0000
-category: Career
+category: Portfolio
 author: "FellowBricks Team"
-image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80"
+image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80"
 ---
 
 <p>I want you to imagine you’re a hiring manager for a second. You’re staring at a screen with 500 resumes. They all look exactly the same: a serif font, a list of bullet points, and the exact same buzzwords like "synergy" and "go-getter." How do you choose? You can't. That’s exactly why I believe the traditional resume is officially dead, and the future belongs entirely to the portfolio.</p>

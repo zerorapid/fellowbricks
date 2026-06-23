@@ -2,9 +2,9 @@
 layout: post
 title: "Why a 1-Page PDF Resume is Killing Your Chances of Landing a Job"
 date: 2026-06-24 12:00:00 +0000
-category: Career
+category: Career Tips
 author: "FellowBricks Team"
-image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&q=80"
+image: "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=800&q=80"
 ---
 
 <p>Let me tell you a secret that career coaches won’t tell you: forcing your entire professional life onto a single PDF page is probably the worst job search strategy you can use right now. I know, you’ve heard the rule a million times—“keep it to one page!” But if you’re trying to stand out to recruiters in 2025, that outdated advice is actively hurting your chances.</p>

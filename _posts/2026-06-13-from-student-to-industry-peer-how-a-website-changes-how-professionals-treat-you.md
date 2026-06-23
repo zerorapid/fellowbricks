@@ -2,9 +2,9 @@
 layout: post
 title: "From Student to Industry Peer: How a Website Changes How Professionals Treat You"
 date: 2026-06-13 12:00:00 +0000
-category: Career
+category: Portfolio
 author: "FellowBricks Team"
-image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&q=80"
+image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?w=800&q=80"
 ---
 
 <p>Have you ever noticed the invisible wall that exists between college students and working professionals? When you introduce yourself as a student, people instantly put you in a box. They smile politely, pat you on the head, and offer you advice. But what if I told you that a simple website could tear down that wall and make industry veterans treat you as an equal?</p>

@@ -2,9 +2,9 @@
 layout: post
 title: "How to Stand Out When You Have Zero Industry Experience"
 date: 2026-06-19 12:00:00 +0000
-category: Career
+category: Career Tips
 author: "FellowBricks Team"
-image: "https://images.unsplash.com/photo-1507208711192-3c2b18970b8c?w=800&q=80"
+image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80"
 ---
 
 <p>I know exactly what you’re thinking right now: "This portfolio stuff sounds great for people with 10 years of experience, but I’m a recent graduate. I have zero industry experience. What do I even put on a website?"</p>

@@ -2,9 +2,9 @@
 layout: post
 title: "Show, Don't Tell: Why Employers Trust Proof of Work Over a List of Skills"
 date: 2026-06-20 12:00:00 +0000
-category: Career
+category: Career Tips
 author: "FellowBricks Team"
-image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
+image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&q=80"
 ---
 
 <p>Let’s play a quick game of "Who do you hire?" Candidate A has a resume that says: "Highly skilled in digital marketing, SEO, and data analysis." Candidate B sends a link to a portfolio containing a case study showing how they grew a website’s organic traffic by 150% in three months using specific SEO strategies.</p>

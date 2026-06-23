@@ -10,10 +10,10 @@ title: Blog Listing
         <p>Career tips, portfolio strategies, and interview insights specifically for engineering graduates in AP & Telangana.</p>
         <div class="blog-categories">
             <span class="category-tag active">All Posts</span>
-            <span class="category-tag">Career Tips</span>
-            <span class="category-tag">Portfolio</span>
-            <span class="category-tag">Interviews</span>
-            <span class="category-tag">Projects</span>
+            {% assign categories_list = site.categories | map: 0 | sort %}
+            {% for category in categories_list %}
+            <span class="category-tag">{{ category }}</span>
+            {% endfor %}
         </div>
     </div>
 </section>

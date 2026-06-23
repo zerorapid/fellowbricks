@@ -2,9 +2,9 @@
 layout: post
 title: "The ATS Trap: How a Portfolio Website Bypasses the Automated Rejection Robots"
 date: 2026-06-21 12:00:00 +0000
-category: Career
+category: Portfolio
 author: "FellowBricks Team"
-image: "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?w=800&q=80"
+image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80"
 ---
 
 <p>I need to let you in on a little industry secret that will completely change how you apply for jobs. You’ve probably heard the horror stories: "The ATS robots rejected my resume!" "An AI auto-rejected me!" I’m going to tell you right now that most of that is a myth. But there</p>

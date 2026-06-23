@@ -2,9 +2,9 @@
 layout: post
 title: "How to Treat Your Portfolio Like a Living Document (And Why It Never Truly Ends)"
 date: 2026-06-14 12:00:00 +0000
-category: Career
+category: Portfolio
 author: "FellowBricks Team"
-image: "https://images.unsplash.com/photo-1542744094-4cea1107fa84?w=800&q=80"
+image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=800&q=80"
 ---
 
 <p>I need to stop you from making the biggest portfolio mistake of all: thinking it is finished. You finally hit "publish" on your website, you breathe a sigh of relief, and you promise yourself you won't touch it again until you need to job hunt in five years. Please don't do that.</p>

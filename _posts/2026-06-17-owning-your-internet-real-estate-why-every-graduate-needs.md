@@ -2,9 +2,9 @@
 layout: post
 title: "Owning Your Internet Real Estate: Why Every Graduate Needs"
 date: 2026-06-17 12:00:00 +0000
-category: Career
+category: Projects
 author: "FellowBricks Team"
-image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4273?w=800&q=80"
+image: "https://images.unsplash.com/photo-1507208711192-3c2b18970b8c?w=800&q=80"
 ---
 
 <p>YourName.com</p>

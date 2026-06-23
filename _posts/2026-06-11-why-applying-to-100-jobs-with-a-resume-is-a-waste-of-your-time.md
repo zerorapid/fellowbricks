@@ -2,9 +2,9 @@
 layout: post
 title: "Why Applying to 100+ Jobs with a Resume is a Waste of Your Time"
 date: 2026-06-11 12:00:00 +0000
-category: Career
+category: Career Tips
 author: "FellowBricks Team"
-image: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?w=800&q=80"
+image: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?w=800&q=80"
 ---
 
 <p>I need to stop you from making the most common, exhausting mistake in the modern job search. You’ve probably been told that looking for a job is a "numbers game." You know the advice: "Just send out 100 resumes a week, and eventually, something will stick!"</p>

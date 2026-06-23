@@ -2,9 +2,9 @@
 layout: post
 title: "The Freelance Side-Hustle: How a Portfolio Helps You Earn Money While in College"
 date: 2026-06-15 12:00:00 +0000
-category: Career
+category: Portfolio
 author: "FellowBricks Team"
-image: "https://images.unsplash.com/photo-1531496730074-83b638c0a7ac?w=800&q=80"
+image: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80"
 ---
 
 <p>I remember my college days—ramen noodles, an empty bank account, and the constant stress of how to pay for textbooks while going to classes. If you are in that boat right now, let me tell you something: you do not need to settle for a minimum-wage campus job. You can start a lucrative freelance side-hustle in college, and a portfolio is the absolute key to making it happen.</p>

@@ -2,9 +2,9 @@
 layout: post
 title: "Imposter Syndrome: How a Portfolio Proves to You (and Employers) That You're Ready"
 date: 2026-06-10 12:00:00 +0000
-category: Career
+category: Portfolio
 author: "FellowBricks Team"
-image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&q=80"
+image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=800&q=80"
 ---
 
 <p>I want to talk about that little voice in your head. You know the one. It whispers right before you hit "submit" on a job application: "You aren't good enough for this. They are going to find out you have no idea what you're doing."</p>

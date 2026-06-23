@@ -2,9 +2,9 @@
 layout: post
 title: "How My Portfolio Website Landed Me an Inbound Job Offer on LinkedIn"
 date: 2026-06-16 12:00:00 +0000
-category: Career
+category: Portfolio
 author: "FellowBricks Team"
-image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80"
+image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&q=80"
 ---
 
 <p>I want to share a story with you because it completely changed how I view the job search. A while back, I was exhausted from sending out hundreds of resumes into the void. So, I stopped applying. Instead, I spent a weekend building a simple portfolio website and linked it right at the top of my LinkedIn profile in the "Featured" section.</p>

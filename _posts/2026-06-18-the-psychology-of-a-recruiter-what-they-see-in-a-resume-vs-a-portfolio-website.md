@@ -2,9 +2,9 @@
 layout: post
 title: "The Psychology of a Recruiter: What They See in a Resume vs. a Portfolio Website"
 date: 2026-06-18 12:00:00 +0000
-category: Career
+category: Portfolio
 author: "FellowBricks Team"
-image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?w=800&q=80"
+image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4273?w=800&q=80"
 ---
 
 <p>Put yourself in a recruiter’s shoes for a moment. It’s 4:00 PM on a Friday. You have fifty resumes sitting in your inbox, and your boss wants a shortlist by Monday morning. How are you going to read them? You aren’t. You’re going to skim them.</p>
