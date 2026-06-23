@@ -1326,7 +1326,7 @@
                 <li><a href="#process">Process</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="blog.html">Blog</a></li>
-                <li><a href="#checkout" class="nav-cta">Get Started</a></li>
+                <li><a href="https://forms.google.com" class="nav-cta">Get Started</a></li>
             </ul>
             <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle Menu">
                 <i class="fas fa-bars"></i>
@@ -1346,7 +1346,7 @@
             <li><a href="#testimonials" class="mobile-link">Testimonials</a></li>
             <li><a href="#faq" class="mobile-link">FAQ</a></li>
             <li><a href="blog.html" class="mobile-link">Blog</a></li>
-            <li><a href="#checkout" class="mobile-link">Get Started →</a></li>
+            <li><a href="https://forms.google.com" class="mobile-link">Get Started →</a></li>
         </ul>
     </div>
 
@@ -1503,7 +1503,7 @@
                         <li><i class="fas fa-check-circle"></i> 2 minor revisions</li>
                         <li><i class="fas fa-check-circle"></i> Dedicated assistant</li>
                     </ul>
-                    <a href="#checkout" class="btn-primary" style="background: var(--gray-800);">
+                    <a href="https://forms.google.com" class="btn-primary" style="background: var(--gray-800);">
                         Get This Package
                         <i class="fas fa-arrow-right"></i>
                     </a>
@@ -1530,7 +1530,7 @@
                         <li><i class="fas fa-check-circle"></i> Full SEO optimization</li>
                         <li><i class="fas fa-check-circle"></i> 2 minor revisions + Dedicated assistant</li>
                     </ul>
-                    <a href="#checkout" class="btn-primary">
+                    <a href="https://forms.google.com" class="btn-primary">
                         Get This Package
                         <i class="fas fa-arrow-right"></i>
                     </a>
@@ -1749,7 +1749,7 @@
             <div class="cta-content">
                 <h2>Ready to Stand Out From 10 Lakh+ Graduates?</h2>
                 <p>Join 500+ students from AP & Telangana who've already upgraded their career with a professional portfolio.</p>
-                <a href="#checkout" class="btn-primary">
+                <a href="https://forms.google.com" class="btn-primary">
                     <i class="fas fa-rocket"></i>
                     Get Your Portfolio Now – ₹7,999 Only
                 </a>
@@ -1810,7 +1810,10 @@
             <div class="footer-bottom">
                 <p>© 2026 FellowSites. All rights reserved. Made with ❤️ in Hyderabad.</p>
                 <div class="footer-bottom-links">
-                    <a href="terms.html">Terms of Service & Refund Policy</a>
+                    <a href="privacy-policy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="refund-policy.html">Refund Policy</a>
+                    <a href="disclaimer.html">Disclaimer</a>
                 </div>
             </div>
         </div>
@@ -1883,47 +1886,7 @@
     </script>
 
 
-    <!-- Checkout Section -->
-    <section id="checkout" style="padding: 100px 0; background: var(--gray-100);">
-        <div class="container" style="max-width: 600px; background: white; padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);">
-            <h2 style="text-align: center; margin-bottom: 10px;">Get Your Portfolio Today</h2>
-            <p style="text-align: center; color: var(--gray-600); margin-bottom: 30px;">Fill out your details to proceed to payment.</p>
-            
-            <form id="payment-form" onsubmit="handlePayment(event)">
-                <div style="margin-bottom: 20px;">
-                    <label style="display: block; font-weight: 500; margin-bottom: 8px;">Full Name</label>
-                    <input type="text" required style="width: 100%; padding: 12px; border: 1px solid var(--gray-300); border-radius: var(--radius-sm);">
-                </div>
-                <div style="margin-bottom: 20px;">
-                    <label style="display: block; font-weight: 500; margin-bottom: 8px;">Email Address</label>
-                    <input type="email" required style="width: 100%; padding: 12px; border: 1px solid var(--gray-300); border-radius: var(--radius-sm);">
-                </div>
-                <div style="margin-bottom: 20px;">
-                    <label style="display: block; font-weight: 500; margin-bottom: 8px;">Phone Number (WhatsApp)</label>
-                    <input type="tel" required style="width: 100%; padding: 12px; border: 1px solid var(--gray-300); border-radius: var(--radius-sm);">
-                </div>
-                <div style="margin-bottom: 30px;">
-                    <label style="display: block; font-weight: 500; margin-bottom: 8px;">College / University</label>
-                    <input type="text" required style="width: 100%; padding: 12px; border: 1px solid var(--gray-300); border-radius: var(--radius-sm);">
-                </div>
-                <button type="submit" class="btn" style="width: 100%; background: var(--primary); color: white; border: none; padding: 16px; font-size: 1.1rem; border-radius: var(--radius-sm); cursor: pointer; font-weight: 600;">
-                    Proceed to Payment (₹7,999)
-                </button>
-                <p id="checkout-msg" style="text-align: center; margin-top: 15px; display: none; color: var(--primary); font-weight: 500;"><i class="fas fa-spinner fa-spin"></i> Redirecting to payment gateway...</p>
-            </form>
-        </div>
-    </section>
-
-    <script>
-        function handlePayment(e) {
-            e.preventDefault();
-            document.getElementById('checkout-msg').style.display = 'block';
-            // Simulate API call and redirect
-            setTimeout(() => {
-                window.location.href = 'https://razorpay.com/payment-link-placeholder'; // Placeholder link
-            }, 1500);
-        }
-    </script>
+    
 
     <!-- Chatbot Widget -->
     <style>
