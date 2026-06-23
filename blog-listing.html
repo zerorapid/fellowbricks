@@ -3,221 +3,69 @@ layout: default
 title: Blog Listing
 ---
 
-
-    <!-- Blog Header -->
-    <section class="blog-header">
-        <div class="container">
-            <h1>The FellowBricks Blog</h1>
-            <p>Career tips, portfolio strategies, and interview insights specifically for engineering graduates in AP & Telangana.</p>
-            <div class="blog-categories">
-                <span class="category-tag active">All Posts</span>
-                <span class="category-tag">Career Tips</span>
-                <span class="category-tag">Portfolio</span>
-                <span class="category-tag">Interviews</span>
-                <span class="category-tag">Projects</span>
-            </div>
+<!-- Blog Header -->
+<section class="blog-header" style="padding-top: 100px;">
+    <div class="container">
+        <h1>The FellowBricks Blog</h1>
+        <p>Career tips, portfolio strategies, and interview insights specifically for engineering graduates in AP & Telangana.</p>
+        <div class="blog-categories">
+            <span class="category-tag active">All Posts</span>
+            <span class="category-tag">Career Tips</span>
+            <span class="category-tag">Portfolio</span>
+            <span class="category-tag">Interviews</span>
+            <span class="category-tag">Projects</span>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- Featured Article -->
-    <section class="blog-section">
-        <div class="container">
-            
-            {% assign featured = site.posts.first %}
-            {% if featured %}
-            <a href="{{ featured.url | relative_url }}" class="featured-article">
-                {% if featured.image %}
-                <img src="{{ featured.image | relative_url }}" alt="{{ featured.title }}">
-                {% else %}
-                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=700&h=400&fit=crop" alt="{{ featured.title }}">
-                {% endif %}
-                <div class="featured-article-content">
-                    <span class="featured-badge"><i class="fas fa-fire"></i> Featured</span>
-                    <div class="blog-card-meta">
-                        <span>{{ featured.category | default: "Career" }}</span>
-                        <span>{{ featured.date | date: "%B %d, %Y" }}</span>
-                    </div>
-                    <h2>{{ featured.title }}</h2>
-                    <div class="blog-card-footer">
-                        <span>Read Article</span>
-                        <i class="fas fa-arrow-right"></i><div class="blog-grid">
-                {% for post in site.posts %}
-                <a href="{{ post.url | relative_url }}" class="blog-card">
-                    {% if post.image %}
-                    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="blog-card-image">
-                    {% else %}
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&h=300&fit=crop" alt="{{ post.title }}" class="blog-card-image">
-                    {% endif %}
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span>{{ post.category | default: "Career" }}</span>
-                            <span>{{ post.date | date: "%B %d, %Y" }}</span>
-                        </div>
-                        <h3>{{ post.title }}</h3>
-                        <div class="blog-card-footer">
-                            <span>Read Article</span>
-                            <i class="fas fa-arrow-right"></i>
-                        </div>
-                    </div>
-                </a>
-                {% endfor %}
-            </div> <!-- Blog Header -->
-    <section class="blog-header">
-        <div class="container">
-            <h1>The FellowBricks Blog</h1>
-            <p>Career tips, portfolio strategies, and interview insights specifically for engineering graduates in AP & Telangana.</p>
-            <div class="blog-categories">
-                <span class="category-tag active">All Posts</span>
-                <span class="category-tag">Career Tips</span>
-                <span class="category-tag">Portfolio</span>
-                <span class="category-tag">Interviews</span>
-                <span class="category-tag">Projects</span>
+<!-- Featured Article -->
+<section class="blog-section">
+    <div class="container">
+        {% assign featured = site.posts.first %}
+        {% if featured %}
+        <a href="{{ featured.url | relative_url }}" class="featured-article">
+            {% if featured.image %}
+            <img src="{{ featured.image | relative_url }}" alt="{{ featured.title }}">
+            {% else %}
+            <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=700&h=400&fit=crop" alt="{{ featured.title }}">
+            {% endif %}
+            <div class="featured-article-content">
+                <span class="featured-badge"><i class="fas fa-fire"></i> Featured</span>
+                <div class="blog-card-meta">
+                    <span>{{ featured.category | default: 'Career' }}</span>
+                    <span>{{ featured.date | date: '%B %d, %Y' }}</span>
+                </div>
+                <h2>{{ featured.title }}</h2>
+                <div class="blog-card-footer">
+                    <span>Read Article</span>
+                    <i class="fas fa-arrow-right"></i>
+                </div>
             </div>
-        </div>
-    </section>
+        </a>
+        {% endif %}
 
-    <!-- Featured Article -->
-    <section class="blog-section">
-        <div class="container">
-            
-            {% assign featured = site.posts.first %}
-            {% if featured %}
-            <a href="{{ featured.url | relative_url }}" class="featured-article">
-                {% if featured.image %}
-                <img src="{{ featured.image | relative_url }}" alt="{{ featured.title }}">
+        <!-- Blog Grid -->
+        <div class="blog-grid">
+            {% for post in site.posts %}
+            <a href="{{ post.url | relative_url }}" class="blog-card">
+                {% if post.image %}
+                <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="blog-card-image">
                 {% else %}
-                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=700&h=400&fit=crop" alt="{{ featured.title }}">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&h=300&fit=crop" alt="{{ post.title }}" class="blog-card-image">
                 {% endif %}
-                <div class="featured-article-content">
-                    <span class="featured-badge"><i class="fas fa-fire"></i> Featured</span>
+                <div class="blog-card-content">
                     <div class="blog-card-meta">
-                        <span>{{ featured.category | default: "Career" }}</span>
-                        <span>{{ featured.date | date: "%B %d, %Y" }}</span>
+                        <span>{{ post.category | default: 'Career' }}</span>
+                        <span>{{ post.date | date: '%B %d, %Y' }}</span>
                     </div>
-                    <h2>{{ featured.title }}</h2>
+                    <h3>{{ post.title }}</h3>
                     <div class="blog-card-footer">
                         <span>Read Article</span>
                         <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
             </a>
-            {% endif %}
-    
-
-            <!-- Blog Grid -->
-            <div class="blog-grid">
-                <a href="blog-article-page.html" class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&h=300&fit=crop" alt="Highlighting major projects" class="blog-card-image">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span class="category">Projects</span>
-                            <span><i class="fas fa-calendar"></i> June 18, 2026</span>
-                            <span><i class="fas fa-clock"></i> 6 min read</span>
-                        </div>
-                        <h3>How to Highlight Final Year Major Projects to Impress Off-Campus Recruiters</h3>
-                        <p>Your final year project is your biggest asset. Learn the exact framework to present it on your portfolio that makes recruiters stop scrolling and start calling.</p>
-                        <span class="read-more">
-                            Read More <i class="fas fa-arrow-right"></i>
-                        </span>
-                    </div>
-                </a>
-
-                <a href="blog-article-page.html" class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&h=300&fit=crop" alt="Tech interviews in Hyderabad" class="blog-card-image">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span class="category">Interviews</span>
-                            <span><i class="fas fa-calendar"></i> June 12, 2026</span>
-                            <span><i class="fas fa-clock"></i> 8 min read</span>
-                        </div>
-                        <h3>Cracking Tech Interviews in Hyderabad: The Ultimate Resume Guide</h3>
-                        <p>Hyderabad's tech scene is booming with companies like Google, Amazon, and Microsoft hiring aggressively. Here's how to craft a resume that gets you through the door.</p>
-                        <span class="read-more">
-                            Read More <i class="fas fa-arrow-right"></i>
-                        </span>
-                    </div>
-                </a>
-
-                <a href="blog-article-page.html" class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=500&h=300&fit=crop" alt="LinkedIn optimization" class="blog-card-image">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span class="category">Career Tips</span>
-                            <span><i class="fas fa-calendar"></i> June 5, 2026</span>
-                            <span><i class="fas fa-clock"></i> 5 min read</span>
-                        </div>
-                        <h3>LinkedIn + Portfolio: The Power Combo That Got Me Placed at Infosys</h3>
-                        <p>Learn how to synchronize your LinkedIn profile with your personal portfolio to create an unstoppable personal brand that recruiters can't ignore.</p>
-                        <span class="read-more">
-                            Read More <i class="fas fa-arrow-right"></i>
-                        </span>
-                    </div>
-                </a>
-
-                <a href="blog-article-page.html" class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1516370629043-62f20ec0a439?w=500&h=300&fit=crop" alt="Domain name strategy" class="blog-card-image">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span class="category">Portfolio</span>
-                            <span><i class="fas fa-calendar"></i> May 28, 2026</span>
-                            <span><i class="fas fa-clock"></i> 4 min read</span>
-                        </div>
-                        <h3>Choosing the Perfect Domain Name: A Guide for Indian Tech Graduates</h3>
-                        <p>Should you use your full name? First name only? Should you add .dev or stick with .com? Here's the definitive guide to choosing a domain that works for your career.</p>
-                        <span class="read-more">
-                            Read More <i class="fas fa-arrow-right"></i>
-                        </span>
-                    </div>
-                </a>
-
-                <a href="blog-article-page.html" class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=500&h=300&fit=crop" alt="Off-campus placement strategies" class="blog-card-image">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span class="category">Career Tips</span>
-                            <span><i class="fas fa-calendar"></i> May 20, 2026</span>
-                            <span><i class="fas fa-clock"></i> 7 min read</span>
-                        </div>
-                        <h3>Off-Campus Placement Strategies for Tier-2 & Tier-3 College Students</h3>
-                        <p>Don't let your college name hold you back. These proven strategies have helped students from smaller colleges land offers at FAANG companies.</p>
-                        <span class="read-more">
-                            Read More <i class="fas fa-arrow-right"></i>
-                        </span>
-                    </div>
-                </a>
-
-                <a href="blog-article-page.html" class="blog-card">
-                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=500&h=300&fit=crop" alt="GitHub for portfolio" class="blog-card-image">
-                    <div class="blog-card-content">
-                        <div class="blog-card-meta">
-                            <span class="category">Projects</span>
-                            <span><i class="fas fa-calendar"></i> May 14, 2026</span>
-                            <span><i class="fas fa-clock"></i> 5 min read</span>
-                        </div>
-                        <h3>How to Showcase GitHub Projects on Your Portfolio the Right Way</h3>
-                        <p>Most students dump GitHub links on their portfolio without context. Here's how to tell the story behind your code and impress technical interviewers.</p>
-                        <span class="read-more">
-                            Read More <i class="fas fa-arrow-right"></i>
-                        </span>
-                    </div>
-                </a>
-            </div>
+            {% endfor %}
         </div>
-    </section>
-
-    <!-- Newsletter Section -->
-    <section class="newsletter-section">
-        <div class="container">
-            <div class="newsletter-content">
-                <h3>📬 Get Weekly Career Tips</h3>
-                <p>Join 2,000+ students from AP & Telangana getting our weekly career insights delivered to their inbox.</p>
-                <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thanks for subscribing!')">
-                    <input type="email" placeholder="Enter your email address" required>
-                    <button type="submit">Subscribe</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    
+    </div>
+</section>

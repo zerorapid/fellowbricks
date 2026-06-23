@@ -1,7 +1,5 @@
 name: FellowBricks
+url: "https://zerorapid.github.io"
+baseurl: "/fellowbricks"
 markdown: kramdown
-
-collections:
-  posts:
-    output: true
-    permalink: /blog/:title/
+permalink: /blog/:title/
