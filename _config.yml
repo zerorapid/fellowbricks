@@ -1,6 +1,6 @@
 name: FellowBricks
-url: "https://zerorapid.github.io"
-baseurl: "/fellowbricks"
+url: "https://www.fellowbricks.site"
+baseurl: ""
 markdown: kramdown
 permalink: /blog/:title/
 
