@@ -1312,6 +1312,7 @@
         .delay-3 { transition-delay: 0.3s; }
         .delay-4 { transition-delay: 0.4s; }
     </style>
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </head>
 <body>
     <!-- Navigation -->
@@ -1386,22 +1387,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=500&fit=crop" alt="Students collaborating on portfolio projects">
-                    <div class="hero-floating-card">
-                        <i class="fas fa-globe"></i>
-                        <div>
-                            <div class="card-text">Custom Domain</div>
-                            <div class="card-sub">yourname.com</div>
-                        </div>
-                    </div>
-                    <div class="hero-floating-card">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <div class="card-text">Pro Email</div>
-                            <div class="card-sub">mail@yourname.com</div>
-                        </div>
-                    </div>
+                <div class="hero-image" style="background: none; box-shadow: none;">
+                    <dotlottie-player 
+                        src="/assets/3D_Website_Launch.lottie" 
+                        background="transparent" 
+                        speed="1" 
+                        style="width: 100%; height: auto; max-width: 650px;" 
+                        loop 
+                        autoplay>
+                    </dotlottie-player>
                 </div>
             </div>
         </div>
