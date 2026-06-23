@@ -1,603 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog – Career Tips & Portfolio Guides | StudentPro</title>
-    <meta name="description" content="Read expert career tips, interview guides, and portfolio strategies for engineering graduates in AP & Telangana.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #6C63FF;
-            --primary-dark: #5A52D5;
-            --primary-light: #8B83FF;
-            --secondary: #00D4AA;
-            --accent: #FF6B6B;
-            --dark: #0F0F23;
-            --dark-light: #1A1A2E;
-            --gray-900: #1a1a2e;
-            --gray-800: #2d2d44;
-            --gray-700: #4a4a6a;
-            --gray-600: #6b6b8a;
-            --gray-500: #8b8ba7;
-            --gray-400: #ababc7;
-            --gray-300: #d1d1e0;
-            --gray-200: #e8e8f0;
-            --gray-100: #f4f4f8;
-            --white: #ffffff;
-            --gradient-1: linear-gradient(135deg, #6C63FF 0%, #00D4AA 100%);
-            --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
-            --shadow-md: 0 4px 20px rgba(0,0,0,0.12);
-            --shadow-lg: 0 8px 40px rgba(0,0,0,0.16);
-            --radius-sm: 8px;
-            --radius-md: 12px;
-            --radius-lg: 20px;
-            --radius-xl: 28px;
-        }
+---
+layout: default
+title: Blog Listing
+---
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            color: var(--gray-900);
-            line-height: 1.7;
-            background: var(--white);
-        }
-
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Space Grotesk', sans-serif;
-            line-height: 1.2;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        /* Navbar */
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(108, 99, 255, 0.08);
-            padding: 12px 0;
-        }
-
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .logo {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.6rem;
-            font-weight: 700;
-            background: var(--gradient-1);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        .logo i {
-            -webkit-text-fill-color: var(--primary);
-            font-size: 1.4rem;
-        }
-
-        .nav-links {
-            display: flex;
-            align-items: center;
-            gap: 32px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            color: var(--gray-700);
-            font-weight: 500;
-            font-size: 0.92rem;
-            transition: color 0.3s ease;
-        }
-
-        .nav-links a:hover {
-            color: var(--primary);
-        }
-
-        .nav-cta {
-            background: var(--gradient-1);
-            color: white !important;
-            padding: 10px 22px;
-            border-radius: 50px;
-            font-weight: 600;
-            font-size: 0.88rem;
-            text-decoration: none;
-        }
-
-        .mobile-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--gray-800);
-            cursor: pointer;
-        }
-
-        /* Blog Header */
-        .blog-header {
-            padding: 140px 0 60px;
-            background: linear-gradient(180deg, #f8f7ff 0%, #ffffff 100%);
-            text-align: center;
-        }
-
-        .blog-header h1 {
-            font-size: clamp(2rem, 4vw, 3rem);
-            font-weight: 800;
-            color: var(--dark);
-            margin-bottom: 16px;
-        }
-
-        .blog-header p {
-            font-size: 1.1rem;
-            color: var(--gray-600);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        /* Blog Categories */
-        .blog-categories {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            margin-top: 32px;
-            flex-wrap: wrap;
-        }
-
-        .category-tag {
-            padding: 8px 18px;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            border: 1px solid var(--gray-200);
-            color: var(--gray-600);
-            text-decoration: none;
-            transition: all 0.3s ease;
-            cursor: pointer;
-        }
-
-        .category-tag:hover, .category-tag.active {
-            background: var(--primary);
-            border-color: var(--primary);
-            color: white;
-        }
-
-        /* Blog Grid */
-        .blog-section {
-            padding: 60px 0 100px;
-        }
-
-        .blog-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 32px;
-        }
-
-        .blog-card {
-            background: var(--white);
-            border: 1px solid var(--gray-200);
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            transition: all 0.4s ease;
-            text-decoration: none;
-            color: inherit;
-            display: block;
-        }
-
-        .blog-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-lg);
-            border-color: transparent;
-        }
-
-        .blog-card-image {
-            width: 100%;
-            height: 220px;
-            object-fit: cover;
-        }
-
-        .blog-card-content {
-            padding: 28px 24px;
-        }
-
-        .blog-card-meta {
-            display: flex;
-            align-items: center;
-            gap: 16px;
-            margin-bottom: 12px;
-        }
-
-        .blog-card-meta span {
-            font-size: 0.82rem;
-            color: var(--gray-500);
-            display: flex;
-            align-items: center;
-            gap: 6px;
-        }
-
-        .blog-card-meta .category {
-            background: rgba(108, 99, 255, 0.08);
-            color: var(--primary);
-            padding: 3px 10px;
-            border-radius: 20px;
-            font-weight: 600;
-        }
-
-        .blog-card h3 {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 12px;
-            line-height: 1.4;
-            transition: color 0.3s ease;
-        }
-
-        .blog-card:hover h3 {
-            color: var(--primary);
-        }
-
-        .blog-card p {
-            font-size: 0.92rem;
-            color: var(--gray-600);
-            line-height: 1.7;
-            margin-bottom: 16px;
-        }
-
-        .blog-card .read-more {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            color: var(--primary);
-            transition: gap 0.3s ease;
-        }
-
-        .blog-card:hover .read-more {
-            gap: 12px;
-        }
-
-        /* Featured Article */
-        .featured-article {
-            display: grid;
-            grid-template-columns: 1.2fr 1fr;
-            gap: 40px;
-            background: var(--white);
-            border: 1px solid var(--gray-200);
-            border-radius: var(--radius-xl);
-            overflow: hidden;
-            margin-bottom: 60px;
-            text-decoration: none;
-            color: inherit;
-            transition: all 0.4s ease;
-        }
-
-        .featured-article:hover {
-            box-shadow: var(--shadow-lg);
-            transform: translateY(-4px);
-        }
-
-        .featured-article img {
-            width: 100%;
-            height: 100%;
-            min-height: 320px;
-            object-fit: cover;
-        }
-
-        .featured-article-content {
-            padding: 40px 36px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .featured-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-            background: var(--gradient-1);
-            color: white;
-            padding: 6px 14px;
-            border-radius: 50px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            width: fit-content;
-            margin-bottom: 16px;
-        }
-
-        .featured-article-content h2 {
-            font-size: 1.6rem;
-            font-weight: 800;
-            color: var(--dark);
-            margin-bottom: 16px;
-            line-height: 1.3;
-        }
-
-        .featured-article-content p {
-            font-size: 1rem;
-            color: var(--gray-600);
-            line-height: 1.7;
-            margin-bottom: 20px;
-        }
-
-        /* Newsletter */
-        .newsletter-section {
-            padding: 80px 0;
-            background: var(--gray-100);
-        }
-
-        .newsletter-content {
-            text-align: center;
-            max-width: 550px;
-            margin: 0 auto;
-        }
-
-        .newsletter-content h3 {
-            font-size: 1.6rem;
-            font-weight: 800;
-            color: var(--dark);
-            margin-bottom: 12px;
-        }
-
-        .newsletter-content p {
-            font-size: 0.95rem;
-            color: var(--gray-600);
-            margin-bottom: 24px;
-        }
-
-        .newsletter-form {
-            display: flex;
-            gap: 12px;
-            max-width: 440px;
-            margin: 0 auto;
-        }
-
-        .newsletter-form input {
-            flex: 1;
-            padding: 14px 20px;
-            border-radius: 50px;
-            border: 2px solid var(--gray-200);
-            font-size: 0.92rem;
-            outline: none;
-            transition: border-color 0.3s ease;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .newsletter-form input:focus {
-            border-color: var(--primary);
-        }
-
-        .newsletter-form button {
-            padding: 14px 28px;
-            border-radius: 50px;
-            background: var(--gradient-1);
-            color: white;
-            border: none;
-            font-weight: 600;
-            font-size: 0.92rem;
-            cursor: pointer;
-            transition: transform 0.3s ease;
-            white-space: nowrap;
-            font-family: 'Inter', sans-serif;
-        }
-
-        .newsletter-form button:hover {
-            transform: translateY(-2px);
-        }
-
-        /* Footer */
-        .footer {
-            background: var(--dark-light);
-            padding: 60px 0 30px;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: 2fr 1fr 1fr 1fr;
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        .footer-brand .logo {
-            margin-bottom: 16px;
-        }
-
-        .footer-brand p {
-            font-size: 0.9rem;
-            color: var(--gray-500);
-            line-height: 1.7;
-            margin-bottom: 20px;
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 12px;
-        }
-
-        .footer-social a {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.05);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--gray-400);
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .footer-social a:hover {
-            background: var(--primary);
-            border-color: var(--primary);
-            color: white;
-            transform: translateY(-3px);
-        }
-
-        .footer-column h4 {
-            font-size: 0.95rem;
-            font-weight: 700;
-            color: var(--white);
-            margin-bottom: 16px;
-        }
-
-        .footer-column ul {
-            list-style: none;
-        }
-
-        .footer-column ul li {
-            margin-bottom: 10px;
-        }
-
-        .footer-column ul li a {
-            text-decoration: none;
-            color: var(--gray-500);
-            font-size: 0.88rem;
-            transition: color 0.3s ease;
-        }
-
-        .footer-column ul li a:hover {
-            color: var(--primary-light);
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.06);
-            padding-top: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 16px;
-        }
-
-        .footer-bottom p {
-            font-size: 0.84rem;
-            color: var(--gray-600);
-        }
-
-        .footer-bottom-links {
-            display: flex;
-            gap: 24px;
-        }
-
-        .footer-bottom-links a {
-            font-size: 0.84rem;
-            color: var(--gray-600);
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        .footer-bottom-links a:hover {
-            color: var(--primary-light);
-        }
-
-        /* Responsive */
-        @media (max-width: 992px) {
-            .featured-article {
-                grid-template-columns: 1fr;
-            }
-
-            .featured-article img {
-                min-height: 240px;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .mobile-toggle {
-                display: block;
-            }
-
-            .blog-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .newsletter-form {
-                flex-direction: column;
-            }
-
-            .featured-article-content {
-                padding: 28px 24px;
-            }
-
-            .footer-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-bottom {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="logo">
-                <i class="fas fa-graduation-cap"></i>
-                studentpro
-            </a>
-            <ul class="nav-links">
-                <li><a href="index.html#features">Features</a></li>
-                <li><a href="index.html#pricing">Pricing</a></li>
-                <li><a href="index.html#process">Process</a></li>
-                <li><a href="index.html#faq">FAQ</a></li>
-                <li><a href="blog-listing.html" style="color: var(--primary); font-weight: 700;">Blog</a></li>
-                <li><a href="https://forms.google.com" class="nav-cta">Get Started</a></li>
-            </ul>
-            <button class="mobile-toggle" onclick="document.querySelector('.nav-links').style.display = document.querySelector('.nav-links').style.display === 'flex' ? 'none' : 'flex'" aria-label="Toggle Menu">
-                <i class="fas fa-bars"></i>
-            </button>
-        </div>
-    </nav>
 
     <!-- Blog Header -->
     <section class="blog-header">
         <div class="container">
-            <h1>The StudentPro Blog</h1>
+            <h1>The FellowBricks Blog</h1>
             <p>Career tips, portfolio strategies, and interview insights specifically for engineering graduates in AP & Telangana.</p>
             <div class="blog-categories">
                 <span class="category-tag active">All Posts</span>
@@ -612,17 +22,87 @@
     <!-- Featured Article -->
     <section class="blog-section">
         <div class="container">
-            <a href="blog-article-page.html" class="featured-article">
-                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=700&h=400&fit=crop" alt="Featured article about portfolio websites">
+            
+            {% assign featured = site.posts.first %}
+            {% if featured %}
+            <a href="{{ featured.url | relative_url }}" class="featured-article">
+                {% if featured.image %}
+                <img src="{{ featured.image | relative_url }}" alt="{{ featured.title }}">
+                {% else %}
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=700&h=400&fit=crop" alt="{{ featured.title }}">
+                {% endif %}
                 <div class="featured-article-content">
                     <span class="featured-badge"><i class="fas fa-fire"></i> Featured</span>
-                    <h2>Why Every Engineering Graduate in 2026 Needs a Personal Portfolio Website</h2>
-                    <p>In a world where 1.5 million engineers graduate annually in India, standing out requires more than just a resume. Discover why a personal portfolio website is the #1 career differentiator for 2026 graduates—and how to build one that gets you hired.</p>
-                    <span class="read-more" style="color: var(--primary); font-weight: 600; display: inline-flex; align-items: center; gap: 8px;">
-                        Read Full Article <i class="fas fa-arrow-right"></i>
-                    </span>
+                    <div class="blog-card-meta">
+                        <span>{{ featured.category | default: "Career" }}</span>
+                        <span>{{ featured.date | date: "%B %d, %Y" }}</span>
+                    </div>
+                    <h2>{{ featured.title }}</h2>
+                    <div class="blog-card-footer">
+                        <span>Read Article</span>
+                        <i class="fas fa-arrow-right"></i><div class="blog-grid">
+                {% for post in site.posts %}
+                <a href="{{ post.url | relative_url }}" class="blog-card">
+                    {% if post.image %}
+                    <img src="{{ post.image | relative_url }}" alt="{{ post.title }}" class="blog-card-image">
+                    {% else %}
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&h=300&fit=crop" alt="{{ post.title }}" class="blog-card-image">
+                    {% endif %}
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span>{{ post.category | default: "Career" }}</span>
+                            <span>{{ post.date | date: "%B %d, %Y" }}</span>
+                        </div>
+                        <h3>{{ post.title }}</h3>
+                        <div class="blog-card-footer">
+                            <span>Read Article</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+            </div> <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <h1>The FellowBricks Blog</h1>
+            <p>Career tips, portfolio strategies, and interview insights specifically for engineering graduates in AP & Telangana.</p>
+            <div class="blog-categories">
+                <span class="category-tag active">All Posts</span>
+                <span class="category-tag">Career Tips</span>
+                <span class="category-tag">Portfolio</span>
+                <span class="category-tag">Interviews</span>
+                <span class="category-tag">Projects</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="blog-section">
+        <div class="container">
+            
+            {% assign featured = site.posts.first %}
+            {% if featured %}
+            <a href="{{ featured.url | relative_url }}" class="featured-article">
+                {% if featured.image %}
+                <img src="{{ featured.image | relative_url }}" alt="{{ featured.title }}">
+                {% else %}
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=700&h=400&fit=crop" alt="{{ featured.title }}">
+                {% endif %}
+                <div class="featured-article-content">
+                    <span class="featured-badge"><i class="fas fa-fire"></i> Featured</span>
+                    <div class="blog-card-meta">
+                        <span>{{ featured.category | default: "Career" }}</span>
+                        <span>{{ featured.date | date: "%B %d, %Y" }}</span>
+                    </div>
+                    <h2>{{ featured.title }}</h2>
+                    <div class="blog-card-footer">
+                        <span>Read Article</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
                 </div>
             </a>
+            {% endif %}
+    
 
             <!-- Blog Grid -->
             <div class="blog-grid">
@@ -740,67 +220,4 @@
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <a href="index.html" class="logo">
-                        <i class="fas fa-graduation-cap"></i>
-                        studentpro
-                    </a>
-                    <p>Helping final-year students and recent graduates in Andhra Pradesh & Telangana build their professional online domain portfolios.</p>
-                    <div class="footer-social">
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html#features">Features</a></li>
-                        <li><a href="index.html#pricing">Pricing</a></li>
-                        <li><a href="index.html#process">Process</a></li>
-                        <li><a href="index.html#testimonials">Testimonials</a></li>
-                        <li><a href="index.html#faq">FAQ</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="blog-listing.html">Blog</a></li>
-                        <li><a href="#">Portfolio Examples</a></li>
-                        <li><a href="#">Resume Templates</a></li>
-                        <li><a href="#">Interview Tips</a></li>
-                        <li><a href="#">Career Guide</a></li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Contact</h4>
-                    <div style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px;">
-                        <i class="fas fa-map-marker-alt" style="color: var(--primary-light); margin-top: 3px;"></i>
-                        <p style="font-size: 0.88rem; color: var(--gray-500); line-height: 1.6;">4th Floor, Cyber Towers,<br>Hitech City, Hyderabad,<br>Telangana – 500081</p>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 12px;">
-                        <i class="fas fa-envelope" style="color: var(--primary-light);"></i>
-                        <p style="font-size: 0.88rem; color: var(--gray-500);">hello@studentpro.in</p>
-                    </div>
-                    <div style="display: flex; align-items: center; gap: 10px;">
-                        <i class="fas fa-phone" style="color: var(--primary-light);"></i>
-                        <p style="font-size: 0.88rem; color: var(--gray-500);">+91 98765 43210</p>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>© 2026 studentpro. All rights reserved. Made with ❤️ in Hyderabad.</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Refund Policy</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
-</html>
+    
