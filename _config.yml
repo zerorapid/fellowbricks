@@ -3,3 +3,5 @@ url: "https://zerorapid.github.io"
 baseurl: "/fellowbricks"
 markdown: kramdown
 permalink: /blog/:title/
+
+future: true
