@@ -354,6 +354,12 @@
             box-shadow: var(--shadow-xl);
         }
 
+        .hero-image dotlottie-player {
+            margin-top: -140px;
+            transform: scale(1.15);
+            transform-origin: top center;
+        }
+
         .hero-floating-card {
             position: absolute;
             background: white;
@@ -1201,10 +1207,16 @@
 
             .hero-image {
                 order: -1;
+                margin-bottom: 30px;
             }
 
             .hero-image img {
                 max-width: 400px;
+            }
+
+            .hero-image dotlottie-player {
+                margin-top: -10px;
+                transform: scale(1.05);
             }
 
             .hero-floating-card {
@@ -1392,7 +1404,7 @@
                         src="/assets/3D_Website_Launch.lottie" 
                         background="transparent" 
                         speed="1" 
-                        style="width: 100%; height: auto; max-width: 650px; margin-top: -140px; transform: scale(1.15); transform-origin: top center;" 
+                        style="width: 100%; height: auto; max-width: 650px;" 
                         loop 
                         autoplay>
                     </dotlottie-player>
