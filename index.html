@@ -1620,6 +1620,371 @@
             .card-header-new { gap: 0.625rem; }
             .step-number-new { width: 40px; height: 40px; font-size: 1rem; }
         }
+
+        /* Compact Pricing Section */
+        .pricing-section-wrapper {
+            font-family: 'Inter', sans-serif;
+            background: 
+                radial-gradient(at 0% 0%, rgba(186, 230, 253, 0.4) 0px, transparent 50%),
+                radial-gradient(at 100% 0%, rgba(221, 214, 254, 0.4) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(252, 231, 243, 0.4) 0px, transparent 50%),
+                radial-gradient(at 0% 100%, rgba(191, 219, 254, 0.4) 0px, transparent 50%),
+                #f8fafc;
+            padding: 80px 20px;
+            color: #1e293b;
+        }
+
+        .pricing-section-wrapper .pricing-container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .pricing-section-wrapper .pricing-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .pricing-section-wrapper .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            color: #475569;
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+
+        .pricing-section-wrapper .badge svg {
+            width: 14px;
+            height: 14px;
+            fill: #10b981;
+        }
+
+        .pricing-section-wrapper .pricing-header h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 32px;
+            font-weight: 800;
+            color: #0f172a;
+            margin-bottom: 8px;
+            line-height: 1.2;
+            letter-spacing: -0.02em;
+        }
+
+        .pricing-section-wrapper .pricing-header p {
+            font-size: 15px;
+            color: #64748b;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        .pricing-section-wrapper .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            margin-bottom: 24px;
+            align-items: stretch;
+        }
+
+        .pricing-section-wrapper .pricing-card {
+            background: #ffffff;
+            border: 1px solid #f1f5f9;
+            border-radius: 20px;
+            padding: 28px;
+            position: relative;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 10px 15px -3px rgba(0, 0, 0, 0.05);
+        }
+
+        .pricing-section-wrapper .pricing-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.08);
+        }
+
+        .pricing-section-wrapper .pricing-card.basic .card-icon {
+            background: linear-gradient(135deg, #06b6d4, #3b82f6);
+        }
+        .pricing-section-wrapper .pricing-card.basic .amount {
+            background: linear-gradient(135deg, #06b6d4, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pricing-section-wrapper .pricing-card.basic .cta-button {
+            background: linear-gradient(135deg, #06b6d4, #3b82f6);
+        }
+        .pricing-section-wrapper .pricing-card.basic .check-icon {
+            background: #e0f2fe;
+            color: #0284c7;
+        }
+
+        .pricing-section-wrapper .pricing-card.premium {
+            border: 2px solid transparent;
+            background: 
+                linear-gradient(#fff, #fff) padding-box,
+                linear-gradient(135deg, #ec4899, #8b5cf6) border-box;
+            box-shadow: 0 10px 30px -5px rgba(139, 92, 246, 0.15);
+        }
+        .pricing-section-wrapper .pricing-card.premium:hover {
+            box-shadow: 0 20px 35px -5px rgba(139, 92, 246, 0.25);
+        }
+        .pricing-section-wrapper .pricing-card.premium .card-icon {
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+        }
+        .pricing-section-wrapper .pricing-card.premium .amount {
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .pricing-section-wrapper .pricing-card.premium .cta-button {
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+        }
+        .pricing-section-wrapper .pricing-card.premium .check-icon {
+            background: #f3e8ff;
+            color: #9333ea;
+        }
+
+        .pricing-section-wrapper .popular-badge {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            background: linear-gradient(135deg, #ec4899, #8b5cf6);
+            color: white;
+            padding: 4px 12px;
+            font-size: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(139, 92, 246, 0.2);
+        }
+
+        .pricing-section-wrapper .card-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+            box-shadow: 0 6px 10px rgba(0,0,0,0.1);
+        }
+
+        .pricing-section-wrapper .card-icon svg {
+            width: 24px;
+            height: 24px;
+            fill: #ffffff;
+        }
+
+        .pricing-section-wrapper .plan-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 20px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 4px;
+        }
+
+        .pricing-section-wrapper .plan-description {
+            color: #64748b;
+            font-size: 13px;
+            margin-bottom: 16px;
+            line-height: 1.4;
+        }
+
+        .pricing-section-wrapper .price-container {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+
+        .pricing-section-wrapper .original-price {
+            font-size: 15px;
+            color: #94a3b8;
+            text-decoration: line-through;
+            margin-bottom: 2px;
+            display: block;
+        }
+
+        .pricing-section-wrapper .current-price {
+            display: flex;
+            align-items: flex-end;
+            gap: 3px;
+            margin-bottom: 4px;
+        }
+
+        .pricing-section-wrapper .currency {
+            font-size: 22px;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 4px;
+        }
+
+        .pricing-section-wrapper .amount {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 40px;
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -0.03em;
+        }
+
+        .pricing-section-wrapper .period {
+            font-size: 13px;
+            color: #64748b;
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        .pricing-section-wrapper .discount-tag {
+            display: inline-block;
+            background: #dcfce7;
+            color: #15803d;
+            padding: 4px 10px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            margin-top: 10px;
+        }
+
+        .pricing-section-wrapper .features-list {
+            list-style: none;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .pricing-section-wrapper .feature-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 8px;
+            padding: 6px 0;
+        }
+
+        .pricing-section-wrapper .check-icon {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        .pricing-section-wrapper .check-icon svg {
+            width: 10px;
+            height: 10px;
+            fill: currentColor;
+        }
+
+        .pricing-section-wrapper .feature-text {
+            color: #475569;
+            font-size: 13px;
+            line-height: 1.4;
+            font-weight: 500;
+        }
+
+        .pricing-section-wrapper .feature-text.highlight {
+            color: #0f172a;
+            font-weight: 600;
+        }
+
+        .pricing-section-wrapper .cta-button {
+            width: 100%;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin-top: auto;
+            text-decoration: none; /* For when it's an a tag */
+        }
+
+        .pricing-section-wrapper .cta-button:hover {
+            transform: translateY(-2px);
+            filter: brightness(1.05);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+            color: white;
+        }
+
+        .pricing-section-wrapper .cta-button svg {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.3s;
+        }
+
+        .pricing-section-wrapper .cta-button:hover svg {
+            transform: translateX(3px);
+        }
+
+        .pricing-section-wrapper .trust-badges {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 16px;
+            padding: 16px;
+            background: rgba(255, 255, 255, 0.6);
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            backdrop-filter: blur(8px);
+        }
+
+        .pricing-section-wrapper .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: #475569;
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .pricing-section-wrapper .trust-item svg {
+            width: 16px;
+            height: 16px;
+            fill: #10b981;
+        }
+
+        @media (max-width: 768px) {
+            .pricing-section-wrapper {
+                padding: 60px 12px;
+            }
+            .pricing-section-wrapper .pricing-header h2 {
+                font-size: 26px;
+            }
+            .pricing-section-wrapper .pricing-header p {
+                font-size: 13px;
+            }
+            .pricing-section-wrapper .pricing-cards {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+            .pricing-section-wrapper .pricing-card {
+                padding: 24px 20px;
+            }
+            .pricing-section-wrapper .amount {
+                font-size: 36px;
+            }
+            .pricing-section-wrapper .trust-badges {
+                gap: 12px;
+                padding: 12px;
+            }
+            .pricing-section-wrapper .trust-item {
+                font-size: 11px;
+            }
+        }
 </style>
     <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
@@ -1777,73 +2142,181 @@
     </section>
 
     <!-- Pricing Section -->
-    <section class="pricing" id="pricing">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-tag">
-                    <i class="fas fa-tags"></i>
+    
+    <!-- Compact Pricing Section -->
+    <section class="pricing-section-wrapper" id="pricing">
+        <div class="pricing-container">
+            <!-- Header -->
+            <div class="pricing-header">
+                <div class="badge">
+                    <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
                     Transparent Pricing
                 </div>
                 <h2>Choose Your Perfect Plan</h2>
                 <p>Two conversion-optimized packages designed for different budgets and needs. No hidden charges.</p>
             </div>
-            <div class="pricing-grid">
-                <!-- Package 1 -->
-                <div class="pricing-card fade-up">
-                    <div class="pricing-card-header">
-                        <h3>Custom Self-Hosted</h3>
-                        <p class="best-for">Best for budget-friendly standard setups</p>
-                        <div class="pricing-amount">
-                            <p class="original-price">₹9,999</p>
-                            <p class="offer-price">₹7,999 <span>/one-time</span></p>
-                        </div>
+
+            <!-- Pricing Cards -->
+            <div class="pricing-cards">
+                
+                <!-- Basic Plan -->
+                <div class="pricing-card basic">
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3,20V10H8V21H4A1,1,0,0,1,3,20ZM21,4a1,1,0,0,0-1-1H4A1,1,0,0,0,3,4V8H21ZM20,21a1,1,0,0,0,1-1V10H10V21Z"/>
+                        </svg>
                     </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check-circle"></i> Single-page portfolio website</li>
-                        <li><i class="fas fa-check-circle"></i> Free custom domain (1 Year)</li>
-                        <li><i class="fas fa-check-circle"></i> Shared hosting included</li>
-                        <li><i class="fas fa-check-circle"></i> Free custom logo design</li>
-                        <li><i class="fas fa-check-circle"></i> Professional email setup</li>
-                        <li><i class="fas fa-check-circle"></i> Full SEO optimization</li>
-                        <li><i class="fas fa-check-circle"></i> 2 minor revisions</li>
-                        <li><i class="fas fa-check-circle"></i> Dedicated assistant</li>
+                    <h3 class="plan-name">Custom Self-Hosted</h3>
+                    <p class="plan-description">Best for budget-friendly standard setups and small businesses.</p>
+                    
+                    <div class="price-container">
+                        <span class="original-price">₹9,999</span>
+                        <div class="current-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">6,999</span>
+                        </div>
+                        <div class="period">one-time payment</div>
+                        <span class="discount-tag">Save ₹3,000 (30% OFF)</span>
+                    </div>
+
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text">Single-page portfolio website</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text">Free custom domain (1 Year)</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text">Shared hosting included</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text">Free custom logo design</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text">Professional email setup</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text highlight">Full SEO optimization</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text">2 minor revisions</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text">Dedicated assistant</span>
+                        </li>
                     </ul>
-                    <a href="https://docs.google.com/forms/d/101N53uUeqNKs8tRp_wYvUK_zd2IWo1kbXD-oL0EU-0g/viewform" class="btn-primary" style="background: var(--gray-800);">
+
+                    <a href="https://docs.google.com/forms/d/101N53uUeqNKs8tRp_wYvUK_zd2IWo1kbXD-oL0EU-0g/viewform" class="cta-button">
                         Get This Package
-                        <i class="fas fa-arrow-right"></i>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
                     </a>
                 </div>
 
-                <!-- Package 2 -->
-                <div class="pricing-card featured fade-up delay-1">
-                    <div class="pricing-badge">🔥 Most Popular</div>
-                    <div class="pricing-card-header">
-                        <h3>Framer Premium</h3>
-                        <p class="best-for">Premium, high-performance design</p>
-                        <div class="pricing-amount">
-                            <p class="original-price">₹14,999</p>
-                            <p class="offer-price">₹9,999 <span>/one-time</span></p>
-                        </div>
+                <!-- Premium Plan -->
+                <div class="pricing-card premium">
+                    <div class="popular-badge">Most Popular</div>
+                    <div class="card-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 0h16v8h-8zM4 8h8l8 8H4zM4 16h8v8z"/>
+                        </svg>
                     </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check-circle"></i> Single-page portfolio website</li>
-                        <li><i class="fas fa-check-circle"></i> Free custom domain (1 Year)</li>
-                        <li><i class="fas fa-check-circle"></i> Framer hosting (1 Year)</li>
-                        <li><i class="fas fa-check-circle"></i> Zero maintenance charges</li>
-                        <li><i class="fas fa-check-circle"></i> Free custom logo design</li>
-                        <li><i class="fas fa-check-circle"></i> Professional email setup</li>
-                        <li><i class="fas fa-check-circle"></i> Full SEO optimization</li>
-                        <li><i class="fas fa-check-circle"></i> 2 minor revisions + Dedicated assistant</li>
+                    <h3 class="plan-name">Framer Premium</h3>
+                    <p class="plan-description">Premium, high-performance design for businesses.</p>
+                    
+                    <div class="price-container">
+                        <span class="original-price">₹14,999</span>
+                        <div class="current-price">
+                            <span class="currency">₹</span>
+                            <span class="amount">9,999</span>
+                        </div>
+                        <div class="period">one-time payment</div>
+                        <span class="discount-tag">Save ₹5,000 (33% OFF)</span>
+                    </div>
+
+                    <ul class="features-list">
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text">Single-page portfolio website</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text">Free custom domain (1 Year)</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text highlight">Framer hosting (1 Year)</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text highlight">Zero maintenance charges</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text">Free custom logo design</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text">Professional email setup</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text highlight">Full SEO optimization</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text highlight">2 minor revisions + Assistant</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text highlight">Priority 24/7 support</span>
+                        </li>
+                        <li class="feature-item">
+                            <div class="check-icon"><svg viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg></div>
+                            <span class="feature-text highlight">Advanced analytics</span>
+                        </li>
                     </ul>
-                    <a href="https://docs.google.com/forms/d/101N53uUeqNKs8tRp_wYvUK_zd2IWo1kbXD-oL0EU-0g/viewform" class="btn-primary">
+
+                    <a href="https://docs.google.com/forms/d/101N53uUeqNKs8tRp_wYvUK_zd2IWo1kbXD-oL0EU-0g/viewform" class="cta-button">
                         Get This Package
-                        <i class="fas fa-arrow-right"></i>
+                        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z"/></svg>
                     </a>
                 </div>
             </div>
-            <!-- Coupon note removed -->
+
+            <!-- Trust Badges -->
+            <div class="trust-badges">
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z"/></svg>
+                    <span>30-Day Money-Back</span>
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                    <span>Secure Payment</span>
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 1c-4.97 0-9 4.03-9 9v7c0 1.66 1.34 3 3 3h3v-8H5v-2c0-3.87 3.13-7 7-7s7 3.13 7 7v2h-4v8h3c1.66 0 3-1.34 3-3v-7c0-4.97-4.03-9-9-9z"/></svg>
+                    <span>24/7 Support</span>
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24"><path d="M7 2v11h3v9l7-12h-4l4-8z"/></svg>
+                    <span>Instant Setup</span>
+                </div>
+                <div class="trust-item">
+                    <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                    <span>No Hidden Fees</span>
+                </div>
+            </div>
         </div>
     </section>
+
 
     
     <!-- Process Section -->
